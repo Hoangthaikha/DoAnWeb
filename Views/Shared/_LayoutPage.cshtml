@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("/Content/css/bootstrap.min.css")
+    <!-- style css -->
+    @Styles.Render("/Content/css/style.css")
+    <!-- Tweaks for older IEs-->
+    @Styles.Render("/fonts/icon_font/fontawesome-free-5.15.3-web/css/all.min.css")
+</head>
+<body class="main-layout">
+    <div class="header_section">
+        <div class="logo">
+            <a href="@Url.Action("Index","Home")"><img src="~/Content/images/logo.png" style="width:300px;"></a>
+        </div>
+    </div>
+
+    <div class="container">
+        <nav>
+            <div class="menuu">
+                <div class="menu-list">
+                    <a class="link" href="">Shop</a>
+                    <a class="link" href="">Restocks</a>
+                    <a class="link" href="">News</a>
+                    <a class="link" href="">About</a>
+                    <a class="link" href="@Url.Action("Contact","Home")">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="right">
+        <div class="search-wrapper">
+            <span><i class="fa fa-search" aria-hidden="true"></i></span>
+            <input type="search" placeholder="Search Here">
+        </div>
+        <div class="admin_cart">
+            <a href="@Url.Action("Login","Login")"><i class="fas fa-user fa-3x"></i></a>
+            <a href=""><i class="fas fa-shopping-bag fa-3x"></i></a>
+        </div>
+    </div>
+
+    <div class="container">
+        <br /><br /><br />
+        @RenderBody()
+    </div>
+  
+    <div class="section_footer">
+        <div class="container">
+            <div class="mail_section">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-2">
+                        <div><a href="#"><img src="~/Content/images/footer-logo.png"></a></div>
+                    </div>
+                    <div class="col-sm-6 col-lg-2">
+                        <div class="footer-logo"><img src="~/Content/images/phone-icon.png"><span class="map_text">1234567890</span></div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="footer-logo"><img src="~/Content/images/email-icon.png"><span class="map_text">minhdao933@gmail.com</span></div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="social_icon">
+                            <ul>
+                                <li><a href="https://www.facebook.com"><img src="~/Content/images/fb-icon.png"></a></li>
+                                <li><a href="https://twitter.com/?lang=vi"><img src="~/Content/images/twitter-icon.png"></a></li>
+                                <li><a href="https://www.instagram.com"><img src="~/Content/images/in-icon.png"></a></li>
+                                <li><a href="https://www.google.com.vn/"><img src="~/Content/images/google-icon.png"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+            <div class="footer_section_2">
+                <div class="row">
+                    <div class="col-sm-4 col-lg-2">
+                        <p class="dummy_text">LEO Công Ty Trách Nhiệm Hữu Hạn Gồm 4 Thành Viên Tự Sáng Lập </p>
+                    </div>
+                    <div class="col-sm-4 col-lg-2">
+                        <h2 class="shop_text">Address </h2>
+                        <div class="image-icon"><img src="~/Content/images/map-icon.png"><span class="pet_text">475A Điện Biên Phủ, Phường 25, Bình Thạnh, Thành phố Hồ Chí Minh</span></div>
+                    </div>
+                    <div class="col-sm-4 col-md-6 col-lg-3">
+                        <h2 class="shop_text">Company </h2>
+                        <div class="delivery_text">
+                            <ul>
+                                <li>Hutech A</li>
+                                <li>Hutech B</li>
+                                <li>Hutech U</li>
+                                <li>Hutech E</li>
+                                <li>Hutech R</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <h2 class="adderess_text">Products</h2>
+                        <div class="delivery_text">
+                            <ul>
+                                <li>T- Shirt</li>
+                                <li>Pants</li>
+                                <li>Hoodie</li>
+                                <li>Jacket</li>
+                                <li>Backpack</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-2">
+                        <h2 class="adderess_text">Newsletter</h2>
+                        <div class="form-group">
+                            <input type="text" class="enter_email" placeholder="Enter Your email" name="Name">
+                        </div>
+                        <button class="subscribr_bt">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section footer end -->
+    <div class="copyright">22/07/2021</div>
+</body>
+</html>

@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>LEO SHOP</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    @Styles.Render("/Content/css/bootstrap.min.css")
+    <!-- style css -->
+    @Styles.Render("/Content/css/style.css")
+    <!-- Tweaks for older IEs-->
+    @Styles.Render("/fonts/icon_font/fontawesome-free-5.15.3-web/css/all.min.css")
+    <!-- owl stylesheets -->
+    @Styles.Render("https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css")
+    <link rel="shorcut icon" href="~/Content/images/logo.png" style="height:300px;">
+</head>
+<body class="main-layout">
+    <div class="header_section">
+        <div class="logo">
+            <a href="@Url.Action("Index","Home")"><img src="~/Content/images/logo.png" style="width:300px;"></a>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <nav>
+            <div class="menuu">
+                <div class="menu-list">
+                    <a class="link" href="@Url.Action("Shop","Home")">Shop</a>
+                    <a class="link" href="">Restocks</a>
+                    <a class="link" href="">News</a>
+                    <a class="link" href="">About</a>
+                    <a class="link" href="@Url.Action("Contact","Home")">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="right">
+        <div class="search-wrapper">
+            <span><i class="fa fa-search" aria-hidden="true"></i></span>
+            <input type="search" placeholder="Search Here">
+        </div>
+        <div class="admin_cart">
+            <a href="@Url.Action("Login","Login")"><i class="fas fa-user fa-3x"></i></a>
+            <a href=""><i class="fas fa-shopping-bag fa-3x"></i></a>
+        </div>
+    </div>
+    <!-- header section start -->
+    <div class="header">
+        <div class="banner_section">
+            <div class="container-fluid">
+                <section class="slide-wrapper">
+                    <div class="container-fluid">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-sm-2 padding_0">
+                                            <br /><br />
+                                            <p class="mens_taital">WOMEN T- SHIRT</p>
+                                            <div class="page_no">1/4</div>
+                                            <br /><br /><br />
+                                            <p class="mens_taital_2">WOMEN SKIRT</p>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div class="banner_taital">
+                                                <br /> 
+                                                <h1 class="banner_text">New Items Clothing </h1>
+                                                <h1 class="mens_text"><strong>WOMEN'S CLOTHING </strong></h1>
+                                                <p class="lorem_text" >Varsity Jacket hay còn được gọi là áo khoác bóng chày còn sở hữu một cái tên khác là Letterman Jacket</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div class="shoes_img"><img src="~/Content/images/model3.jpg" style="border-radius: 10px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-sm-2 padding_0">
+                                            <br /><br />
+                                             <p class="mens_taital">Couple T- SHIRT</p>
+                                            <div class="page_no">2/4</div>
+                                            <br /><br />
+                                            <p class="mens_taital_2">Couple Pants</p>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div class="banner_taital">
+                                                <br />
+                                                <h1 class="banner_text">New Items Clothing </h1>
+                                                <h1 class="mens_text"><strong>Couple Clothing</strong></h1>
+                                                <p class="lorem_text">Cái tên T-shirt bắt nguồn từ hình dáng của chiếc áo <br /> này có hình chữ T đơn giản với hai cánh tay áo ngắn <br /> và phần thân hình chữ nhật.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div class="shoes_img"><img src="~/Content/images/2ybasic.jpg" style="border-radius: 10px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-sm-2 padding_0">
+                                            <br /><br />
+                                                  <p class="mens_taital">WOMEN HOODIE</p>
+                                            <div class="page_no">3/4</div>
+                                            <br /><br />
+                                                  <p class="mens_taital_2">WOMEN SKIRT</p>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div class="banner_taital">
+                                                <br />
+                                                <h1 class="banner_text">New Items Clothing </h1>
+                                                <h1 class="mens_text"><strong>Women Hoodie</strong></h1>
+                                                <p class="lorem_text">Hoodie là loại áo được thiết kế với form rộng rãi thoải mái, độ dài ngang hông và thường được may có mũ..</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div class="shoes_img"><img src="~/Content/images/HDpurple.jpg" style="border-radius: 10px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-sm-2 padding_0">
+                                            <br /><br />
+                                            <p class="mens_taital">UNISEX T- SHIRT</p>
+                                            <div class="page_no">4/4</div>
+                                            <br /><br />
+                                            <p class="mens_taital_2">UNISEX T-SHIRT</p>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div class="banner_taital">
+                                                <br /> 
+                                                 <h1 class="banner_text">New Items Clothing </h1>
+                                                <h1 class="mens_text"><strong>Unisex's Clothing</strong></h1>
+                                                <p class="lorem_text">Unisex hay phong cách trung tính chỉ những đồ dùng hoặc cách ăn mặc thích hợp cho cả nam và nữ. Một số kiểu quần áo, giày dép, mũ hoặc kiểu tóc có thể thích hợp cho hai giới.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div class="shoes_img"><img src="~/Content/images/graffiti white.jpg" style="border-radius: 10px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        @RenderBody()
+
+    </div>
+
+    <div class="section_footer">
+        <div class="container">
+            <div class="mail_section">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-2">
+                        <div><a href="#"><img src="~/Content/images/footer-logo.png"></a></div>
+                    </div>
+                    <div class="col-sm-6 col-lg-2">
+                        <div class="footer-logo"><img src="~/Content/images/phone-icon.png"><span class="map_text">1234567890</span></div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="footer-logo"><img src="~/Content/images/email-icon.png"><span class="map_text">minhdao933@gmail.com</span></div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="social_icon">
+                            <ul>
+                                <li><a href="https://www.facebook.com"><img src="~/Content/images/fb-icon.png"></a></li>
+                                <li><a href="https://twitter.com/?lang=vi"><img src="~/Content/images/twitter-icon.png"></a></li>
+                                <li><a href="https://www.instagram.com"><img src="~/Content/images/in-icon.png"></a></li>
+                                <li><a href="https://www.google.com.vn/"><img src="~/Content/images/google-icon.png"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+            <div class="footer_section_2">
+                <div class="row">
+                    <div class="col-sm-4 col-lg-2">
+                        <p class="dummy_text">LEO Công Ty Trách Nhiệm Hữu Hạn Gồm 4 Thành Viên Tự Sáng Lập </p>
+                    </div>
+                    <div class="col-sm-4 col-lg-2">
+                        <h2 class="shop_text">Address </h2>
+                        <div class="image-icon"><img src="~/Content/images/map-icon.png"><span class="pet_text">475A Điện Biên Phủ, Phường 25, Bình Thạnh, Thành phố Hồ Chí Minh</span></div>
+                    </div>
+                    <div class="col-sm-4 col-md-6 col-lg-3">
+                        <h2 class="shop_text">Company </h2>
+                        <div class="delivery_text">
+                            <ul>
+                                <li>Hutech A</li>
+                                <li>Hutech B</li>
+                                <li>Hutech U</li>
+                                <li>Hutech E</li>
+                                <li>Hutech R</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <h2 class="adderess_text">Products</h2>
+                        <div class="delivery_text">
+                            <ul>
+                                <li>T- Shirt</li>
+                                <li>Pants</li>
+                                <li>Hoodie</li>
+                                <li>Jacket</li>
+                                <li>Backpack</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-2">
+                        <h2 class="adderess_text">Newsletter</h2>
+                        <div class="form-group">
+                            <input type="text" class="enter_email" placeholder="Enter Your email" name="Name">
+                        </div>
+                        <button class="subscribr_bt">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section footer end -->
+    <div class="copyright">22/07/2021</div>
+
+    @Scripts.Render("/Content/js/jquery.min.js")
+    @Scripts.Render("/Content/js/popper.min.js")
+    @Scripts.Render("/Content/js/bootstrap.bundle.min.js")
+    @Scripts.Render("/Content/js/jquery-3.0.0.min.js")
+    @Scripts.Render("/Content/js/plugin.js")
+    <!-- sidebar -->
+    @Scripts.Render("/Content/js/jquery.mCustomScrollbar.concat.min.js")
+    @Scripts.Render("/Content/js/custom.js")
+    <!-- javascript -->
+    @Scripts.Render("/Content/js/owl.carousel.js")
+
+    <script>
+        $(document).ready(function () {
+            $(".fancybox").fancybox({
+                openEffect: "none",
+                closeEffect: "none"
+            });
+
+
+            $('#myCarousel').carousel({
+                interval: false
+            });
+
+            //scroll slides on swipe for touch enabled devices
+
+            $("#myCarousel").on("touchstart", function (event) {
+
+                var yClick = event.originalEvent.touches[0].pageY;
+                $(this).one("touchmove", function (event) {
+
+                    var yMove = event.originalEvent.touches[0].pageY;
+                    if (Math.floor(yClick - yMove) > 1) {
+                        $(".carousel").carousel('next');
+                    }
+                    else if (Math.floor(yClick - yMove) < -1) {
+                        $(".carousel").carousel('prev');
+                    }
+                });
+                $(".carousel").on("touchend", function () {
+                    $(this).off("touchmove");
+                });
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+﻿@import url(animate.min.css);
+@import url(normalize.css);
+@import url(meanmenu.css);
+@import url(owl.carousel.min.css);
+@import url(slick.css);
+@import url(jquery-ui.css);
+@import url(nice-select.css);
+
+
+* {
+    box-sizing: border-box !important;
+    transition: ease all 0.5s;
+}
+
+body {
+    color: #666666;
+    font-family: Poppins;
+    line-height: 1.80857;
+    font-weight: normal;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #EEEEEE;
+}
+.imgg {
+    margin-left: 150px;
+    padding-right: 10px;
+}
+.see {
+    width: 50%;
+    height: 50px;
+    color: #ffffff;
+    background-color: #4481eb;
+    color: #ffffff;
+    font-size: 16pt;
+    margin-top: 35px;
+}
+.topic{
+    text-align:center;
+}
+.rows {
+    margin: 8px -16px;
+    margin-left:50px;
+}
+
+    /* Add padding BETWEEN each column */
+    .rows,
+    .rows > .column {
+        padding: 8px;
+    }
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 30%;
+}
+
+/* Clear floats after rows */
+.rows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.price{
+    color:black;
+}
+
+/* Content */
+.contents {
+    background-color: white;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    text-decoration:none;
+}
+
+.contents:hover {
+    cursor: pointer;
+    box-shadow: initial;
+}
+
+.contents h3:hover {
+   text-decoration-line: underline;
+
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}

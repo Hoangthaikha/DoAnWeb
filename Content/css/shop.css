@@ -1,0 +1,64 @@
+﻿.all-banner {
+    position: relative;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+.center_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    background-color: #DCDCDC;
+    border: 2px solid #f1f1f1;
+    width: 10%;
+    padding: 5px;
+    text-align: center;
+}
+.banner{
+    margin-top:-20px;
+    height:300px;
+    width:1100px;
+}
+.containers{
+    margin: 0 auto;
+}
+.row {
+    margin: 10px -16px;
+}
+
+    /* Thêm phần đệm giữa mỗi cột */
+    .row,
+    .row > .column {
+        padding: 8px;
+    }
+
+/* tạo 3 cột bằng nhau nối cạnh nhau*/
+.column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Ẩn tất cả các ptử theo mặc định */
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+    .content img:hover {
+        transform: scale(1.05);
+        transition: 0.3s;
+        border-radius: 15px;
+    }
+
+    .content :hover {
+        text-decoration-line: underline;
+    }
